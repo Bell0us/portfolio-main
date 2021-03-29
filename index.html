@@ -13,7 +13,17 @@
 </head>
 
 <body>
+
     <div class="container">
+
+        <div class="overlay">
+            <ul class="overlay-menu">
+                <li class="overlay-menu-links home"><a href="#home">home</a></li>
+                <li class="overlay-menu-links about"><a href="#about">about</a></li>
+                <li class="overlay-menu-links work"><a href="#work">work</a></li>
+                <li class="overlay-menu-links contact"><a href="#contact">contact</a></li>
+            </ul>
+        </div>
 
         <!-- Menu -->
         <div class="menu">
@@ -191,14 +201,14 @@
             </dl>
             <div class="contact-main">
                 <form class="contact-form" data-netlify="true">
-                    <input type="text" id="name" class="form-control" name="fullname" placeholder="name">
+                    <input type="text" id="name" class="form-control" name="fullname" placeholder="name" required>
 
-                    <input type="email" id="email" class="form-control" name="email" placeholder="@email">
+                    <input type="email" id="email" class="form-control" name="email" placeholder="@email" required>
 
                     <input type="text" id="subject" class="form-control" name="subject" placeholder="subject">
 
-                    <textarea name="message" id="message" class="form-control" cols="15" rows="5"
-                        placeholder="message"></textarea>
+                    <textarea name="message" id="message" class="form-control" cols="15" rows="5" placeholder="message"
+                        required></textarea>
 
                     <div class="white-line f-white-line"></div>
 
@@ -217,9 +227,11 @@
 
     </div>
     <div id="particles-js"></div>
-    <!-- particles.js lib -->
-    <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+
     <script src="js/particles.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script src="js/swipe.js"></script>
 

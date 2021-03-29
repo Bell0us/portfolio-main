@@ -68,7 +68,7 @@
 @media screen and (min-width: 990px) {
   .main-heading {
     font-size: rem(65px);
-    width: 800px;
+    max-width: 800px;
   }
 }
 
@@ -101,5 +101,12 @@
     grid-area: h-scroll;
     justify-self: end;
     align-self: end;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .main-heading {
+    font-size: rem(75px);
+    max-width: 1000px;
   }
 }

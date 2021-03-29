@@ -111,7 +111,15 @@ a {
   background-color: unset;
   border: 1px solid $highlight-color;
   color: $highlight-color;
-  border-radius: 100vw;
+  transition: all 100ms ease-out;
+  border-radius: 8px;
+
+  &:hover,
+  &:focus {
+    border-radius: 0;
+    outline: 1px solid #fff;
+    outline-offset: 2px;
+  }
 }
 
 #particles-js {

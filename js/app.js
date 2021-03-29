@@ -1,3 +1,9 @@
+/*
+ *
+ * Particles.js background settings
+ *
+ */
+
 particlesJS("particles-js", {
     "particles": {
         "number": {
@@ -211,3 +217,118 @@ logoSwitch.addEventListener('click', () => {
     frontEndCard.style.zIndex = "0";
     logoCard.style.zIndex = "1";
 })
+
+/* 
+ *
+ * Menu active class toggle
+ *
+ */
+
+const nav = $('.desktop-menu');
+const li = nav.find('li');
+
+const home = $('#home');
+const homeLink = nav.find('.home');
+
+const work = $('#work');
+const workLink = nav.find('.work');
+
+const about = $('#about');
+const aboutLink = nav.find('.about');
+
+const contact = $('#contact');
+const contactLink = nav.find('.contact');
+
+
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= home.offset().top) {
+        homeLink.addClass('active-link').siblings().removeClass('active-link');
+    }
+    if (scroll >= (about.offset().top - 400)) {
+        aboutLink.addClass('active-link').siblings().removeClass('active-link');
+    }
+    if (scroll >= (work.offset().top - 400)) {
+        workLink.addClass('active-link').siblings().removeClass('active-link');
+    }
+    if (scroll >= (contact.offset().top - 400)) {
+        contactLink.addClass('active-link').siblings().removeClass('active-link');
+    }
+
+});
+
+/*
+ *
+ * Smooth scroll via links
+ *
+ */
+
+// Select all links with hashes
+$('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function (event) {
+        // On-page links
+        if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+            location.hostname == this.hostname
+        ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 800, function () {
+                    // Callback after animation
+                    // Must change focus!
+                    var $target = $(target);
+                    $target.focus();
+                    if ($target.is(":focus")) { // Checking if the target was focused
+                        return false;
+                    } else {
+                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                        $target.focus(); // Set focus again
+                    };
+                });
+            }
+        }
+    });
+
+const menuBadge = document.querySelector('.menu-badge');
+const overlay = document.querySelector('.overlay');
+const homeLinkMobile = document.querySelector('.home');
+const workLinkMobile = document.querySelector('.work');
+const aboutLinkMobile = document.querySelector('.about');
+const hireLinkMobile = document.querySelector('.contact');
+
+
+
+menuBadge.addEventListener('click', () => {
+    overlay.classList.toggle('open');
+});
+
+homeLinkMobile.addEventListener('click', () => {
+    overlay.classList.remove('open');
+    menuBadge.classList.remove('active');
+});
+
+workLinkMobile.addEventListener('click', () => {
+    overlay.classList.remove('open');
+    menuBadge.classList.remove('active');
+});
+
+aboutLinkMobile.addEventListener('click', () => {
+    overlay.classList.remove('open');
+    menuBadge.classList.remove('active');
+});
+
+hireLinkMobile.addEventListener('click', () => {
+    overlay.classList.remove('open');
+    menuBadge.classList.remove('active');
+});

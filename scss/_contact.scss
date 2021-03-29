@@ -79,6 +79,7 @@
   align-self: center;
 
   padding: rem(5px) rem(10px);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
@@ -147,5 +148,12 @@
       margin-right: rem(20px);
       transform: translateY(5px);
     }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .contact-form {
+    max-width: 1000px;
+    min-height: 400px;
   }
 }

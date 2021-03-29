@@ -85,6 +85,22 @@
     width: 40%;
   }
 
+  .nav-links {
+    font-weight: $ex-light;
+    padding: 0 1rem;
+
+    transition: all 100ms ease-in;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  .active-link {
+    border-bottom: 1px solid #fff;
+  }
+
   .mobile-menu {
     display: none;
   }
@@ -93,5 +109,9 @@
 @media screen and (min-width: 1405px) {
   .menu {
     padding: 0;
+  }
+
+  .logo {
+    width: 50px;
   }
 }
