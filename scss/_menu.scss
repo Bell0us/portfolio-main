@@ -68,3 +68,30 @@
   stroke-width: 5;
   stroke-linecap: round;
 }
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    max-width: 1400px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .desktop-menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 40%;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1405px) {
+  .menu {
+    padding: 0;
+  }
+}

@@ -35,7 +35,7 @@
 
 .card-heading {
   font-size: rem(30px);
-  font-weight: $regular;
+  font-weight: $medium;
   margin-bottom: rem(-20px);
   margin-top: rem(20px);
 }
@@ -64,6 +64,10 @@
   padding: rem(7px) 0;
 }
 
+.main-tech {
+  color: #fbff2e;
+}
+
 .card-photo {
   grid-area: wc-photo;
 
@@ -74,4 +78,43 @@
 
   border-bottom-left-radius: $work-card-radius;
   border-bottom-right-radius: $work-card-radius;
+}
+
+@media screen and (min-width: 1024px) {
+  #work {
+    justify-content: space-evenly;
+  }
+
+  .work-card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'wc-text wc-photo';
+    min-height: 350px;
+    max-width: 850px;
+
+    background-color: #9e59da;
+
+    border-radius: $work-card-radius;
+  }
+
+  .card-heading {
+    font-size: rem(40px);
+    margin-bottom: rem(-20px);
+    margin-top: rem(20px);
+  }
+
+  .card-about {
+    font-size: rem(14px);
+  }
+
+  .card-technologies {
+    font-size: rem(14px);
+    padding: rem(10px) 0;
+  }
+
+  .card-photo {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: $work-card-radius;
+  }
 }

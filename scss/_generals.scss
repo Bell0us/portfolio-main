@@ -1,15 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -80,7 +78,7 @@ a {
 }
 
 .desc {
-  max-width: 780px;
+  max-width: 400px;
 }
 
 .desc-title {
@@ -127,4 +125,30 @@ a {
   background-repeat: repeat;
   background-size: 20%;
   background-position: 50% 50%;
+}
+
+@media screen and (min-width: 550px) {
+  .sub-heading {
+    font-size: rem(30px);
+  }
+}
+
+@media screen and (min-width: 775px) {
+  .sub-heading {
+    font-size: rem(40px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .desc {
+    max-width: 600px;
+  }
+
+  .title-heading {
+    font-size: rem(30px);
+  }
+
+  .desc-text {
+    font-size: rem(20px);
+  }
 }

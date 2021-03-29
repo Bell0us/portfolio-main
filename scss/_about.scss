@@ -126,3 +126,43 @@
 .card-text {
   justify-self: center;
 }
+
+@media screen and (min-width: 1024px) {
+  .switchers {
+    display: none;
+  }
+
+  .a-desc {
+    margin-top: rem(50px);
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'ui-card web-card logo-card';
+    column-gap: 20px;
+
+    position: static;
+
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .ui-card,
+  .web-card,
+  .logo-card {
+    position: static;
+    padding: 2rem 1rem;
+  }
+
+  .ui-card {
+    grid-area: ui-card;
+  }
+  .web-card {
+    grid-area: web-card;
+  }
+  .logo-card {
+    grid-area: logo-card;
+  }
+}
