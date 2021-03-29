@@ -1,0 +1,84 @@
+#work {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 110vh;
+  margin-bottom: rem(70px);
+}
+
+.work-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    'wc-text'
+    'wc-photo';
+  min-height: 600px;
+  max-width: 400px;
+
+  background-color: #9e59da;
+
+  border-radius: $work-card-radius;
+}
+
+.work-card-text {
+  grid-area: wc-text;
+
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-heading {
+  font-size: rem(28px);
+  font-weight: $regular;
+  margin-bottom: rem(-20px);
+  margin-top: rem(20px);
+}
+
+.tinder-logo {
+  width: 22px;
+  height: auto;
+
+  transform: translateY(2px);
+}
+
+.card-about {
+  font-size: rem(12px);
+  font-weight: $light;
+
+  color: $sub-font-color;
+
+  text-align: justify;
+
+  width: 80%;
+}
+
+.card-technologies {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+  font-size: rem(12px);
+
+  background-color: rgba(#000, 0.2);
+  padding: rem(7px) 0;
+}
+
+.card-photo {
+  grid-area: wc-photo;
+
+  background-image: url('../img/jtinder.png');
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+
+  border-bottom-left-radius: $work-card-radius;
+  border-bottom-right-radius: $work-card-radius;
+}

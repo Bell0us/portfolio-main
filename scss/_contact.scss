@@ -1,0 +1,83 @@
+#contact {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.sub-contact {
+  display: none;
+}
+
+.contact-main {
+  width: 100%;
+}
+
+.contact-form {
+  grid-area: main-c;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr 1fr 1fr 2.5fr 15px 1fr;
+  grid-template-areas:
+    'name name'
+    'email email'
+    'subject subject'
+    'message message'
+    '. .'
+    'f-line submit';
+
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+#name,
+#email,
+#subject,
+#message {
+  background-color: $form-color;
+  outline: none;
+  border: none;
+  color: $main-font-color;
+  padding: 0 0 0 rem(8px);
+}
+
+::placeholder {
+  color: $sub-font-color;
+  font-weight: $light;
+  font-family: 'Poppins', sans-serif;
+}
+
+#name {
+  grid-area: name;
+}
+#email {
+  grid-area: email;
+}
+#subject {
+  grid-area: subject;
+}
+#message {
+  grid-area: message;
+  padding-top: 10px;
+}
+
+.f-white-line {
+  grid-area: f-line;
+}
+
+.send-btn {
+  grid-area: submit;
+
+  background-color: unset;
+  border: 2px solid $highlight-color;
+  color: $highlight-color;
+  border-radius: 6px;
+  font-size: em(30);
+  align-self: center;
+
+  padding: rem(5px) rem(10px);
+}

@@ -1,0 +1,61 @@
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 45px;
+  height: auto;
+}
+
+.menu-badge {
+  cursor: pointer;
+  transition: transform 400ms;
+  user-select: none;
+  margin-right: -1rem;
+
+  .top {
+    stroke-dasharray: 40 139;
+  }
+
+  .bottom {
+    stroke-dasharray: 40 180;
+  }
+
+  &.active .top {
+    stroke-dashoffset: -98px;
+  }
+
+  &.active .bottom {
+    stroke-dashoffset: -138px;
+  }
+}
+
+.menuRotate.active {
+  transform: rotate(45deg);
+}
+
+.menuRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: white;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
