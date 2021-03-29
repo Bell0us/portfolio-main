@@ -122,6 +122,30 @@ a {
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #363648;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(174, 174, 174);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(104, 103, 103);
+  border-radius: 20px;
+}
+
 #particles-js {
   position: fixed;
   top: 0;

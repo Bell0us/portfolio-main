@@ -7,7 +7,7 @@
 particlesJS("particles-js", {
     "particles": {
         "number": {
-            "value": 160,
+            "value": 200,
             "density": {
                 "enable": true,
                 "value_area": 800
@@ -53,7 +53,7 @@ particlesJS("particles-js", {
         },
         "line_linked": {
             "enable": true,
-            "distance": 50,
+            "distance": 70,
             "color": "#ffffff",
             "opacity": 0.3,
             "width": 1
@@ -78,7 +78,7 @@ particlesJS("particles-js", {
         "events": {
             "onhover": {
                 "enable": true,
-                "mode": "bubble"
+                "mode": "grab"
             },
             "onclick": {
                 "enable": true,
@@ -88,7 +88,7 @@ particlesJS("particles-js", {
         },
         "modes": {
             "grab": {
-                "distance": 400,
+                "distance": 100,
                 "line_linked": {
                     "opacity": 1
                 }
@@ -307,8 +307,6 @@ const workLinkMobile = document.querySelector('.work');
 const aboutLinkMobile = document.querySelector('.about');
 const hireLinkMobile = document.querySelector('.contact');
 
-
-
 menuBadge.addEventListener('click', () => {
     overlay.classList.toggle('open');
 });
@@ -332,3 +330,178 @@ hireLinkMobile.addEventListener('click', () => {
     overlay.classList.remove('open');
     menuBadge.classList.remove('active');
 });
+
+/*
+ *
+ * Loading page animations
+ *
+ */
+
+const tl = gsap.timeline();
+
+tl.to('.intro-logo', {
+        y: '0%',
+        duration: 1,
+        ease: 'power1.out'
+    })
+    .to('.text', {
+        y: '0%',
+        duration: 1,
+        stagger: .5,
+        ease: 'power1.out'
+    }, "-=.25")
+    .to('.slider', {
+        y: '-100%',
+        duration: 1.5,
+        delay: .5,
+        ease: 'power1.out'
+    })
+    .to('.intro', {
+        y: '-100%',
+        duration: 1,
+        ease: 'power1.out'
+    }, "-=1")
+
+/*
+ *
+ * GSAP Anims
+ *
+ */
+
+// ! Landing page
+
+tl.from('.main-heading', {
+        y: '20%',
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out'
+    }, "-=.5")
+    .from('.introduction', {
+        y: '20%',
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out'
+    }, "-=.5")
+    .from('.scroll', {
+        y: '20%',
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out'
+    }, "-=.5")
+
+/*
+ *
+ * ScrollTrigger animatons
+ *
+ */
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from('.a-heading-container', {
+    scrollTrigger: {
+        trigger: '.a-heading-container',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '20%',
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+
+gsap.from('.a-desc', {
+    scrollTrigger: {
+        trigger: '.a-desc',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '20%',
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+
+gsap.from('.card-container', {
+    scrollTrigger: {
+        trigger: '.card-container',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '20%',
+    duration: 1,
+    ease: 'power3.out',
+})
+
+// ! Work page
+
+gsap.from('.w-heading-container', {
+    scrollTrigger: {
+        trigger: '.w-heading-container',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '20%',
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+
+gsap.from('.w-desc', {
+    scrollTrigger: {
+        trigger: '.w-desc',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '20%',
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+
+gsap.from('.work-card', {
+    scrollTrigger: {
+        trigger: '.work-card',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '20%',
+    duration: 1,
+    ease: 'power3.out',
+})
+
+// ! Contact page
+
+gsap.from('.c-heading-container', {
+    scrollTrigger: {
+        trigger: '.c-heading-container',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '20%',
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+
+gsap.from('.c-desc', {
+    scrollTrigger: {
+        trigger: '.c-desc',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '20%',
+    opacity: 0,
+    duration: 1,
+    ease: 'power3.out',
+})
+
+gsap.from('.contact-main', {
+    scrollTrigger: {
+        trigger: '.contact-main',
+        start: 'top 100%',
+        scrub: 1
+    },
+    y: '20%',
+    duration: 1,
+    ease: 'power3.out',
+})

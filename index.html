@@ -16,6 +16,24 @@
 
     <div class="container">
 
+        <div class="intro">
+            <div class="intro-text">
+                <div class="hide-logo">
+                    <img class="intro-logo" src="img/JT.svg" alt="Logo">
+                </div>
+                <div class="hide">
+                    <span class="text"><span class="shadow"> W</span>eb.</span>
+                </div>
+                <div class="hide">
+                    <span class="text"><span class="shadow">I</span>s.</span>
+                </div>
+                <div class="hide">
+                    <span class="text"><span class="shadow">A</span>rt.</span>
+                </div>
+            </div>
+        </div>
+        <div class="slider"></div>
+
         <div class="overlay">
             <ul class="overlay-menu">
                 <li class="overlay-menu-links home"><a href="#home">home</a></li>
@@ -27,7 +45,7 @@
 
         <!-- Menu -->
         <div class="menu">
-            <a href="index.html"><img src="img/JT.svg" alt="JTwebs" class="logo"></a>
+            <a href="#home"><img src="img/JT.svg" alt="JTwebs" class="logo"></a>
             <nav class="mobile-menu">
                 <svg class="menu-badge menuRotate" viewBox="0 0 100 100" width="65"
                     onclick="this.classList.toggle('active')">
@@ -78,7 +96,7 @@
         <!-- About page -->
         <section id="about">
 
-            <div class="heading-container-left">
+            <div class="heading-container-left a-heading-container">
                 <div class="white-line a-white-line"></div>
                 <h1 class="sub-heading about-heading">
                     Something about <span>me</span>.
@@ -97,7 +115,7 @@
                 </dd>
             </dl>
 
-            <div class="card-container">
+            <div class="card-container main-content">
                 <div class="card ui-card">
                     <img src="img/ui-icon.svg" alt="UI icon" class="card-icon ui-img">
                     <h6 class="card-title">
@@ -140,7 +158,7 @@
         </section>
 
         <section id="work">
-            <div class="heading-container-right">
+            <div class="heading-container-right w-heading-container">
                 <div class="white-line w-white-line"></div>
                 <h1 class="sub-heading work-heading">
                     My favourite <span>project</span>.
@@ -158,7 +176,7 @@
                     way. Do you want to see your website here?
                 </dd>
             </dl>
-            <div class="work-card">
+            <div class="work-card main-content">
                 <div class="work-card-text">
                     <h3 class="card-heading">
                         JTinder.com
@@ -182,7 +200,7 @@
         </section>
 
         <section id="contact">
-            <div class="heading-container-left">
+            <div class="heading-container-left c-heading-container">
                 <div class="white-line c-white-line"></div>
                 <h1 class="sub-heading contact-heading">
                     Let's work <span>together</span>.
@@ -199,7 +217,7 @@
                     project in mind? Don't hesitate and contact me!
                 </dd>
             </dl>
-            <div class="contact-main">
+            <div class="contact-main main-content">
                 <form class="contact-form" data-netlify="true">
                     <input type="text" id="name" class="form-control" name="fullname" placeholder="name" required>
 
@@ -232,6 +250,15 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- GSAP 3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"
+        integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+        integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+        crossorigin="anonymous"></script>
 
     <script src="js/swipe.js"></script>
 
