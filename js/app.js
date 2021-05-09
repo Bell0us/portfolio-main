@@ -427,7 +427,7 @@ gsap.from('.card-container', {
         start: 'top 100%',
         scrub: 1
     },
-    y: '20%',
+    y: '5%',
     duration: 1,
     ease: 'power3.out',
 })
