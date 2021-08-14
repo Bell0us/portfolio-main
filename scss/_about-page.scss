@@ -1,0 +1,46 @@
+.container-about {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  min-height: 97vh;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  padding: rem(30px) 0;
+}
+
+.about-page-heading {
+  margin-bottom: rem(10px);
+}
+
+.high-about {
+  color: $highlight-color;
+}
+
+.back-arrow {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-page-desc {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  .desc-text-about-page {
+    font-size: rem(14px);
+  }
+
+  .about-desc {
+    max-width: 400px;
+  }
+}
