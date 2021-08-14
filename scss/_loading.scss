@@ -34,7 +34,7 @@
     transform: translateY(100%);
     display: inline-block;
 
-    font-size: rem(60px);
+    font-size: rem(40px);
     font-weight: $bold;
   }
 }
@@ -49,12 +49,12 @@
 }
 
 .intro-logo {
-  width: 150px;
+  width: 110px;
   height: auto;
 }
 
 .shadow {
-  text-shadow: 7px 1px $highlight-color;
+  text-shadow: 5px 1px $highlight-color;
 }
 
 .slider {
@@ -86,5 +86,12 @@
   .hide {
     margin: 0;
     font-size: rem(35px);
+
+    .text {
+      font-size: 55;
+    }
+  }
+  .intro-logo {
+    width: 130px;
   }
 }
