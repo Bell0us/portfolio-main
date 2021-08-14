@@ -352,6 +352,18 @@ gsap.from('.work-card', {
     ease: 'power3.out',
 })
 
+gsap.from('.work-card-2', {
+    scrollTrigger: {
+        trigger: '.work-card',
+        start: 'top 100%',
+        scrub: 1
+    },
+    /* y: '20%', */
+    opacity: 0,
+    duration: 1.5,
+    ease: 'power3.out',
+})
+
 // ! Contact page
 
 gsap.from('.c-heading-container', {

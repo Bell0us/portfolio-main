@@ -7,6 +7,10 @@
   padding-top: rem(100px);
 }
 
+.main-content {
+  margin: rem(20px) 0;
+}
+
 .work-card {
   display: grid;
   grid-template-columns: 1fr;
@@ -18,6 +22,21 @@
   max-width: 300px;
 
   background-color: #9e59da;
+
+  border-radius: $work-card-radius;
+}
+
+.work-card-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 60%;
+  grid-template-areas:
+    'wc-text'
+    'wc-photo';
+  min-height: 600px;
+  max-width: 300px;
+
+  background-color: #60c5ac;
 
   border-radius: $work-card-radius;
 }
@@ -78,6 +97,19 @@
   border-bottom-left-radius: $work-card-radius;
   border-bottom-right-radius: $work-card-radius;
 }
+.card-photo-2 {
+  grid-area: wc-photo;
+
+  background-image: url('../img/jt-chatter.png');
+  background-color: #dadbd3;
+  height: 100%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  border-bottom-left-radius: $work-card-radius;
+  border-bottom-right-radius: $work-card-radius;
+}
 
 @media screen and (min-width: 1024px) {
   #work {
@@ -91,10 +123,15 @@
     grid-template-areas: 'wc-text wc-photo';
     min-height: 350px;
     max-width: 850px;
+  }
 
-    background-color: #9e59da;
-
-    border-radius: $work-card-radius;
+  .work-card-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'wc-photo wc-text';
+    min-height: 350px;
+    max-width: 850px;
   }
 
   .card-heading {
@@ -115,5 +152,9 @@
   .card-photo {
     border-bottom-left-radius: 0;
     border-top-right-radius: $work-card-radius;
+  }
+  .card-photo-2 {
+    border-bottom-right-radius: 0;
+    border-top-left-radius: $work-card-radius;
   }
 }
