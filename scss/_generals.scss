@@ -64,7 +64,7 @@ a {
 
 .sub-heading {
   grid-area: heading;
-  font-size: rem(25px);
+  font-size: rem(21px);
 }
 
 .white-line {
@@ -79,6 +79,8 @@ a {
 
 .desc {
   max-width: 400px;
+  margin-top: rem(20px);
+  margin-bottom: rem(30px);
 }
 
 .desc-title {
@@ -90,17 +92,17 @@ a {
 
 .title-heading {
   font-weight: $regular;
-  font-size: rem(23px);
+  font-size: rem(18px);
 }
 
 .title-btn {
-  font-size: rem(12px);
+  font-size: rem(10px);
   padding: rem(5px) rem(15px);
 }
 
 .desc-text {
   font-weight: $ex-light;
-  font-size: rem(14px);
+  font-size: rem(12px);
 
   text-align: justify;
 
@@ -161,26 +163,28 @@ a {
 
 @media screen and (min-width: 550px) {
   .sub-heading {
-    font-size: rem(30px);
+    font-size: rem(26px);
   }
 }
 
 @media screen and (min-width: 775px) {
   .sub-heading {
-    font-size: rem(40px);
+    font-size: rem(31px);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .desc {
-    max-width: 600px;
+    max-width: 500px;
+    margin-top: rem(50px);
+    margin-bottom: rem(50px);
   }
 
   .title-heading {
-    font-size: rem(30px);
+    font-size: rem(20px);
   }
 
   .desc-text {
-    font-size: rem(20px);
+    font-size: rem(15px);
   }
 }

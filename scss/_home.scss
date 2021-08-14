@@ -6,22 +6,22 @@
   align-items: center;
 
   min-height: 100vh;
-  margin-bottom: rem(70px);
+  margin-bottom: rem(100px);
 }
 
 .main-heading {
-  font-size: rem(35px);
+  font-size: rem(30px);
   font-weight: $medium;
   line-height: 1.2;
 }
 
 .intro-title {
-  font-size: rem(25px);
+  font-size: rem(21px);
   font-weight: $light;
 }
 
 .intro-desc {
-  font-size: rem(18px);
+  font-size: rem(14px);
   font-weight: $ex-light;
   color: $sub-font-color;
 }
@@ -34,7 +34,7 @@
 }
 
 .scroll-badge {
-  width: rem(26px);
+  width: rem(21px);
   height: auto;
 
   margin-bottom: rem(20px);
@@ -57,18 +57,18 @@
 
 @media screen and (min-width: 617px) {
   .main-heading {
-    font-size: rem(45px);
+    font-size: rem(35px);
   }
 }
 @media screen and (min-width: 775px) {
   .main-heading {
-    font-size: rem(55px);
+    font-size: rem(40px);
   }
 }
 @media screen and (min-width: 990px) {
   .main-heading {
-    font-size: rem(65px);
-    max-width: 800px;
+    font-size: rem(50px);
+    max-width: 700px;
   }
 }
 
@@ -106,7 +106,7 @@
 
 @media screen and (min-width: 1400px) {
   .main-heading {
-    font-size: rem(75px);
+    font-size: rem(55px);
     max-width: 1000px;
   }
 }

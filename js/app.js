@@ -403,9 +403,9 @@ gsap.from('.a-heading-container', {
         start: 'top 100%',
         scrub: 1
     },
-    y: '20%',
+    /* y: '20%', */
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     ease: 'power3.out',
 })
 
@@ -415,9 +415,9 @@ gsap.from('.a-desc', {
         start: 'top 100%',
         scrub: 1
     },
-    y: '20%',
+    /* y: '20%', */
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     ease: 'power3.out',
 })
 
@@ -427,8 +427,8 @@ gsap.from('.card-container', {
         start: 'top 100%',
         scrub: 1
     },
-    y: '5%',
-    duration: 1,
+    opacity: 0,
+    duration: 1.5,
     ease: 'power3.out',
 })
 
@@ -440,9 +440,9 @@ gsap.from('.w-heading-container', {
         start: 'top 100%',
         scrub: 1
     },
-    y: '20%',
+    /* y: '20%', */
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     ease: 'power3.out',
 })
 
@@ -452,9 +452,9 @@ gsap.from('.w-desc', {
         start: 'top 100%',
         scrub: 1
     },
-    y: '20%',
+    /* y: '20%', */
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     ease: 'power3.out',
 })
 
@@ -464,8 +464,9 @@ gsap.from('.work-card', {
         start: 'top 100%',
         scrub: 1
     },
-    y: '20%',
-    duration: 1,
+    /* y: '20%', */
+    opacity: 0,
+    duration: 1.5,
     ease: 'power3.out',
 })
 
@@ -477,9 +478,9 @@ gsap.from('.c-heading-container', {
         start: 'top 100%',
         scrub: 1
     },
-    y: '20%',
+    /* y: '20%', */
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     ease: 'power3.out',
 })
 
@@ -489,9 +490,9 @@ gsap.from('.c-desc', {
         start: 'top 100%',
         scrub: 1
     },
-    y: '20%',
+    /* y: '20%', */
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     ease: 'power3.out',
 })
 
@@ -501,7 +502,8 @@ gsap.from('.contact-main', {
         start: 'top 100%',
         scrub: 1
     },
-    y: '20%',
-    duration: 1,
+    /* y: '20%', */
+    opacity: 0,
+    duration: 1.5,
     ease: 'power3.out',
 })

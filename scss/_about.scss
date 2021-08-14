@@ -3,9 +3,7 @@
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
-
-  min-height: 100vh;
-  margin-bottom: rem(70px);
+  margin-bottom: rem(100px);
   padding-top: rem(100px);
 }
 
@@ -34,8 +32,8 @@
 }
 
 .swicth {
-  width: rem(26px);
-  height: rem(26px);
+  width: rem(20px);
+  height: rem(20px);
 
   background-color: #21212b;
   border: 4px solid #21212b;
@@ -92,24 +90,24 @@
 }
 
 .ui-img {
-  width: 60%;
+  width: 50%;
   height: auto;
 }
 
 .web-img {
-  width: 70%;
+  width: 60%;
   height: auto;
 }
 
 .logo-img {
-  width: 40%;
+  width: 30%;
   height: auto;
 }
 
 .card-title {
   grid-area: card-title;
   font-weight: $regular;
-  font-size: rem(24px);
+  font-size: rem(18px);
 
   align-self: end;
 }
@@ -119,7 +117,7 @@
   align-self: center;
 
   font-weight: $ex-light;
-  font-size: rem(14px);
+  font-size: rem(12px);
 }
 
 .card-icon,
@@ -133,10 +131,6 @@
     display: none;
   }
 
-  .a-desc {
-    margin-top: rem(50px);
-  }
-
   .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -146,7 +140,7 @@
 
     position: static;
 
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
   }
 

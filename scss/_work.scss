@@ -3,20 +3,19 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
-
-  min-height: 100vh;
-  margin-bottom: rem(70px);
+  margin-bottom: rem(100px);
+  padding-top: rem(100px);
 }
 
 .work-card {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 40% 60%;
   grid-template-areas:
     'wc-text'
     'wc-photo';
   min-height: 600px;
-  max-width: 400px;
+  max-width: 300px;
 
   background-color: #9e59da;
 
@@ -34,8 +33,8 @@
 }
 
 .card-heading {
-  font-size: rem(30px);
-  font-weight: $medium;
+  font-size: rem(21px);
+  font-weight: $regular;
   margin-bottom: rem(-20px);
   margin-top: rem(20px);
 }
@@ -99,7 +98,7 @@
   }
 
   .card-heading {
-    font-size: rem(40px);
+    font-size: rem(30px);
     margin-bottom: rem(-20px);
     margin-top: rem(20px);
   }
