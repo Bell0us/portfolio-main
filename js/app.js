@@ -354,7 +354,7 @@ gsap.from('.work-card', {
 
 gsap.from('.work-card-2', {
     scrollTrigger: {
-        trigger: '.work-card',
+        trigger: '.work-card-2',
         start: 'top 100%',
         scrub: 1
     },

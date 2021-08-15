@@ -42,6 +42,10 @@
   border: none;
   color: $main-font-color;
   padding: 0 0 0 rem(8px);
+
+  &:focus {
+    border: 1px solid white;
+  }
 }
 
 ::placeholder {
