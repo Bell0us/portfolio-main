@@ -26,6 +26,17 @@
   position: absolute;
   left: 0;
   top: 20px;
+
+  &:hover,
+  &:focus {
+    animation: arrowAnim 0.5s infinite alternate-reverse;
+  }
+}
+
+@keyframes arrowAnim {
+  to {
+    transform: translateX(-10px);
+  }
 }
 
 @media screen and (min-width: 1024px) {
