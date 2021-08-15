@@ -49,7 +49,7 @@
 }
 
 .intro-logo {
-  width: 110px;
+  width: 80px;
   height: auto;
 }
 
@@ -74,21 +74,22 @@
 @media screen and (max-width: 850px) {
   .intro-text {
     flex-flow: column wrap;
+    height: 40vh;
+    justify-content: space-around;
   }
 
   .hide-logo {
     img {
-      width: 70px;
+      width: 60px;
       height: auto;
     }
   }
 
   .hide {
     margin: 0;
-    font-size: rem(35px);
 
     .text {
-      font-size: rem(40px);
+      font-size: rem(35px);
     }
   }
 }
